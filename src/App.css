@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  .container {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5); /*dim the background*/
+  }
+  
+  .page-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .page-heading h1 {
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 300;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0px 20px;
+    border-radius: 2px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .page-heading h1 {
+      font-size: 3rem;
+    }
+  }
+  
+  .form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form__form_group {
+    width: 600px;
+    /* margin-top: 20px; */
+    opacity: 0.9;
+    display: block;
+  }
+  
+  .form__text_field {
+    font-size: 8px;
+    margin: 0 10px 15px 10px !important;
+    color: #fff !important;
+    background-color: whitesmoke !important;
+    border-radius: 6px;
+  }
+  
+  
+  .form__selector_soil {
+  
+    margin: 0 10px 5px 35px !important;
+    color: #fff !important;
+    background-color: whitesmoke !important;
+    border-radius: 6px;
+  }
+  
+  .form__selector_crop {
+  
+    margin: 0 10px 5px 135px !important;
+    color: #fff !important;
+    background-color: whitesmoke !important;
+    border-radius: 6px;
+  }
+  
+  .form__button {
+    margin: 30px 160px !important;
+    padding: 10px 50px !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    Background-color: #2a380e !important;
+   }
+  
+  .form__title {
+    margin: 10px;
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(245, 239, 230);
+    background-color: #2a380e;
+    padding: 15px;
+  }
+  
+  .homecontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Add Animation for Forms */
+.animate {
+  -webkit-animation: pulse 1.3s;
+  animation: pulse 1.3s;
+}
+
+@-webkit-keyframes pulse {
+  0% { -webkit-transform: scale(1); }
+  50% { -webkit-transform: scale(1.1); }
+  100% { -webkit-transform: scale(1); }
+}
+  
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/*columns form for crop*/
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+
+/*column format for fertilizer*/
+.column2{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 23px;
+}
+.column2 + .column2{
+margin-left:25px;
+}
+
+/*box_form*/
+.cube{
+margin-left: 17px;
+border: 2px solid #8fb14c;
+width: 95%;
+height: 82%;
+background-color: #8fb14c;
+}

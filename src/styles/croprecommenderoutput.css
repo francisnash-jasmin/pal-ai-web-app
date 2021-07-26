@@ -1,0 +1,61 @@
+.output_container {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: #3D550C !important;
+}
+
+.back__button {
+  margin: 7px !important;
+  width: 550px !important;
+  padding: 5px !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: white !important;
+  background-color: #3D550C !important;
+  border-bottom: 2px black solid !important;
+  border-radius: 10px !important;
+}
+
+.output_container__card {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*fade in animation for results*/
+.aniout{
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+
+
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
